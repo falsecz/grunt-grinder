@@ -7,6 +7,7 @@ module.exports = (grunt) ->
       return fn arguments...
 
   wrap = (domain, object, method) ->
+  	return if object.preGrinderOriginal? # already wrapped
     original = object[method]
     object[method] = createWrapperFn original, domain, method
     object[method].preGrinderOriginal = original # backup

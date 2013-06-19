@@ -1,0 +1,7 @@
+{
+	"name": "Grinder",
+	"version": "0.0.1",
+	"minimum_chrome_version": "26",
+	"manifest_version": 2,
+	"devtools_page": "main.html"
+}
